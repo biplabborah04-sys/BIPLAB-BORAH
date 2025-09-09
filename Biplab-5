@@ -1,0 +1,27 @@
+#include <iostream> //Biplab Borah 
+using namespace std;
+
+int main() {
+    float basicSalary, hra, da, otherAllowance, totalSalary;
+
+    // Input from user
+    cout << "Enter Basic Salary: ";
+    cin >> basicSalary;
+
+    cout << "Enter HRA (House Rent Allowance): ";
+    cin >> hra;
+
+    cout << "Enter DA (Dearness Allowance): ";
+    cin >> da;
+
+    cout << "Enter Other Allowance: ";
+    cin >> otherAllowance;
+
+    // Calculate total salary
+    totalSalary = basicSalary + hra + da + otherAllowance;
+
+    // Display result
+    cout << "Total Salary = " << totalSalary << endl;
+
+    return 0;
+}

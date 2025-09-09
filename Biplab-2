@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m, n;
+
+    // Ask user for dimensions
+    cout << "Enter number of rows (m): ";
+    cin >> m;
+    cout << "Enter number of columns (n): ";
+    cin >> n;
+
+    // Declare a 2D array
+    int matrix[100][100]; // Assumes max size is 100x100
+
+    // Input elements
+    cout << "Enter elements of the matrix (" << m << "x" << n << "):\n";
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << "Element [" << i << "][" << j << "]: ";
+            cin >> matrix[i][j];
+        }
+    }
+
+    // Display matrix
+    cout << "\nMatrix is:\n";
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << matrix[i][j] << "\t";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
